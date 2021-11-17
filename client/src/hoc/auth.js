@@ -34,7 +34,7 @@ export default function (SpecificComponent, option, adminRoute = null) {
 
         }, [])
 
-        return (
+        return ( 
             <SpecificComponent {...props} user={user} />
         )
     }
