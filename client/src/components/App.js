@@ -9,6 +9,7 @@ import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer";
 import UploadProductPage from "./UploadProductPage/UploadProductPage.js";
 import DetailProductPage from "./views/DetailProductPage/DetailProductPage";
+import CartPage from "./views/CartPage/CartPage";
 //null   Anyone Can go inside
 //true   only logged in user can go inside
 //false  logged in user can't go inside
@@ -32,6 +33,7 @@ function App() {
             path="/product/upload"
             component={Auth(UploadProductPage, true)}
           />
+          <Route exact path="/user/cart" component={Auth(CartPage, true)} />
           {/* 로그인 한 사람만 들어가도록 */}
         </Switch>
       </div>
